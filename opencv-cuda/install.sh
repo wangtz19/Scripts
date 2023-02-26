@@ -56,3 +56,7 @@ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules \
 
 # Build
 cmake --build .
+
+# For more building options, refer to following links
+# https://docs.opencv.org/4.5.0/db/d05/tutorial_config_reference.html
+# https://gist.github.com/raulqf/f42c718a658cddc16f9df07ecc627be7
