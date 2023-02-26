@@ -37,11 +37,22 @@ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules \
         -DBUILD_PERF_TESTS=OFF \
         -DBUILD_EXAMPLES=OFF \
         -DWITH_OPENEXR=OFF \
+        -DWITH_NVCUVID=ON\
+        -DCUDA_FAST_MATH=ON\
+        -DWITH_CUFFT=ON \
         -DWITH_CUDA=ON \
         -DWITH_CUBLAS=ON \
         -DWITH_CUDNN=ON \
         -DOPENCV_DNN_CUDA=ON \
         ../opencv-4.x
+
+# WITH_NVCUVID: Enable hardware acceleration decoding in VideoCapture
+# CUDA_FAST_MATH: Enable fast math
+# WITH_CUFFT: Enable CUFFT library
+# WITH_CUDA: Enable CUDA support
+# WITH_CUBLAS: Enable CUBLAS library
+# WITH_CUDNN: Enable cuDNN library
+# OPENCV_DNN_CUDA: Enable CUDA backend for DNN module
 
 # Build
 cmake --build .
