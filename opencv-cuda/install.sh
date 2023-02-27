@@ -38,6 +38,7 @@ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules \
         -DBUILD_EXAMPLES=OFF \
         -DWITH_OPENEXR=OFF \
         -DWITH_NVCUVID=ON\
+        -DWITH_NVCUVENC=ON\
         -DCUDA_FAST_MATH=ON\
         -DWITH_CUFFT=ON \
         -DWITH_CUDA=ON \
