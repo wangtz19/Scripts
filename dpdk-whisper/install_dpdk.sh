@@ -42,7 +42,7 @@ apt install -y --no-install-recommends \
 # end of list
 
 # Download DPDK
-: "${DPDK_VERSION:=18.11}"
+: "${DPDK_VERSION:=19.11}"
 
 mkdir -p "/home/dpdk"
 wget -q -O "dpdk.tar.xz" "https://fast.dpdk.org/rel/dpdk-$DPDK_VERSION.tar.xz"
